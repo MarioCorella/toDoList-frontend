@@ -1,0 +1,13 @@
+.contenedor {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.button {
+    margin: 0 50px;
+}
+
