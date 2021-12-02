@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div class="cont">
+    <h2 class="title mt-4">Log In</h2>
+    <form [formGroup]="form" class="form" >
+
+        <div class="row">
+            <label for="input3" class="form-label">Email</label>
+            <input type="text" class="form-control" id="input3" formControlName="email">
+        </div>
+          
+
+        <div class="row">
+            <label for="input1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="input1" formControlName="password">
+        </div>
+        
+
+        <div class="row"> 
+            <button type="submit" class="btn btn-primary button" (click)="login()">Create</button>
+        </div>
+
+
+    </form>
+</div>
+

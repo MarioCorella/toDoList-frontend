@@ -6,12 +6,17 @@ import { IUser } from '../models/user.interface';
   providedIn: 'root'
 })
 export class AuthService {
-  createUserUrl = 'http://localhost:3000/create';
+  userUrl = 'http://localhost:3000/api/users';
+  loginUrl = 'http://localhost:3000/api/login';
 
 
   constructor(private http: HttpClient) { }
 
   createAccount(userData: IUser) {
-    return this.http.post<any>(this.createUserUrl, userData).subscribe(console.log)
+    return this.http.post<any>(this.userUrl, userData).subscribe(console.log);
+  }
+
+  login(loginData) {
+    return this.http.post<any>(this.loginUrl, loginData).subscribe(console.log);
   }
 }
