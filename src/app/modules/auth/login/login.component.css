@@ -1,0 +1,16 @@
+.title {
+    text-align: center;
+}
+
+.form {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.row {
+    margin:  25px;
+    width: 400px;
+}
